@@ -4,7 +4,7 @@ import bgFamily from "../assets/1.jpg";
 import "./First Section.css";
 function FirstSection() {
   return (
-    <section class="flex ">
+    <section class="p-6 flex  justify-around items-center">
       <img class="w-1/4" src={bgFamily} alt={"fondoFamilia"} />
       <div class="text-azul-ap ">
         <div class="text-xl font-bold sm:text-3xl md:text-4xl sm:font-semibold">

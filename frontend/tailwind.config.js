@@ -37,6 +37,7 @@ module.exports = {
       },
       width: {
         100: "100px",
+        600: "600px",
       },
       dropShadow: {
         "3xl": "0 10px 35px rgb(2, 113,182)",
