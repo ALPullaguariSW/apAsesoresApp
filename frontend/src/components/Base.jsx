@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/Leon AP.svg";
 import "./Base.css";
-import LoginForm from "/apAsesoresApp/backend/loginForm.js";
+
 function Base() {
   const [showLoginForm, setShowLoginForm] = useState(false);
 
