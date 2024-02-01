@@ -15,6 +15,9 @@ module.exports = {
     fontFamily: {
       raleway: ["Raleway", "sans-serif"],
     },
+    willChange: {
+      "bg-white": "bg-transparent",
+    },
     extend: {
       colors: {
         "azul-ap": "#0271b6",

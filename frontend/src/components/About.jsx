@@ -3,14 +3,14 @@ import roundedLogo from "../assets/rLogo.svg";
 import "./About.css";
 function About() {
   return (
-    <section id="sn" class="bg-white flex items-center justify-center">
-      <div class="flex flex-col space-y-5 items-center lg:space-x-28 lg:flex-row p-14 md:p-32">
-        <div class="text-azul-ap max-w-md md:max-w-lg text-md lg:text-xl">
-          <h2 class="mb-4 text-4xl tracking-tight font-semibold">
+    <section id="sn" class="bg-white flex">
+      <div class="flex flex-col">
+        <div class="text-azul-ap">
+          <h2 class=" tracking-tight font-semibold">
             SOBRE NOSOTROS
           </h2>
-          <div class="max-w-lg">
-            <p class="mb-4">
+          <div class="">
+            <p class="">
               En A&P Asesores, nuestra misión es proporcionar asesoría experta y
               soluciones de seguros personalizadas para proteger los activos y
               la tranquilidad de nuestros clientes. La responsabilidad y la
