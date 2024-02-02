@@ -59,7 +59,7 @@ function Footer() {
           <a href="" class="hover:text-sol-ap px-2">
             A&P ASESORES
           </a>
-          . Todos los derechos reservados.
+          Todos los derechos reservados.
         </div>
       </div>
     </footer>

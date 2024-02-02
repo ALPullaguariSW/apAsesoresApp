@@ -4,19 +4,13 @@ import bgFamily from "../assets/1.jpg";
 import "./First Section.css";
 function FirstSection() {
   return (
-    <section class="p-6 flex  justify-around items-center">
-      <img class="w-1/4" src={bgFamily} alt={"fondoFamilia"} />
-      <div class="text-azul-ap ">
-        <div class="text-xl font-bold sm:text-3xl md:text-4xl sm:font-semibold">
+    <section class="">
+      <div class=" text-azul-ap relative flex  items-center ">
+        <div class="absolute  w-400 flex flex-col items-end ">
           <p class="">ASESORES DE SEGUROS</p>
-          <p class="font-thin sm:font-normal text-base sm:text-xl">
-            "FORTALEZA QUE INSPIRA"
-          </p>
-        </div>
-        <div class="w-fit text-center space-y-3">
-          <h1 class="font-thin sm:font-normal md:font-semibold center">
-            Asesoria gratuita
-          </h1>
+          <p class="">"FORTALEZA QUE INSPIRA"</p>
+
+          <h1 class="">Asesoria gratuita</h1>
           <button class="bg-azul-ap flex w-32 -scale-2 justify-between px-4 py-2 rounded text-white items-center hover:bg-sol-ap">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,6 +29,12 @@ function FirstSection() {
             Contacto
           </button>
         </div>
+
+        <img
+          class="h-300 md:h-400 w-full object-cover  justify-center "
+          src={bgFamily}
+          alt={"fondoFamilia"}
+        />
       </div>
     </section>
   );

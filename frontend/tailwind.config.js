@@ -27,6 +27,9 @@ module.exports = {
       maxHeight: {
         500: "500px",
       },
+      maxWidth: {
+        600: "600px",
+      },
       height: {
         100: "100px",
         200: "200px",
@@ -37,6 +40,7 @@ module.exports = {
       },
       width: {
         100: "100px",
+        400: "400px",
         600: "600px",
       },
       dropShadow: {
