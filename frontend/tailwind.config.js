@@ -30,6 +30,9 @@ module.exports = {
       maxWidth: {
         600: "600px",
       },
+      scale: {
+        "-100": "-1",
+      },
       height: {
         100: "100px",
         200: "200px",
@@ -52,5 +55,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [require("tailwindcss-animated"), require("@tailwindcss/forms")],
 };

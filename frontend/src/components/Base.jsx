@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import logo from "../assets/Leon AP.svg";
-import "./Base.css";
+import "./CSS/Base.css";
 import LoginForm from "./LoginForm";
 
 function Base() {
   const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showMenu, setShowMenu] = useState(false); // Estado para controlar si el menú está abierto o cerrado
 
   const handleLoginClick = () => {
     setShowLoginForm(!showLoginForm);
-    LoginForm();
+  };
+
+  const handleMenuClick = () => {
+    setShowMenu(!showMenu); // Cambia el estado del menú al contrario del estado actual
+  };
+  const handleCloseLoginForm = () => {
+    setShowLoginForm(false);
   };
 
   return (
@@ -18,24 +25,52 @@ function Base() {
           <img src={logo} class="w-20" alt="" />
         </a>
 
-        <button className="md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-8 h-8 text-azul-ap"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-            />
-          </svg>
+        <button className="md:hidden" onClick={handleMenuClick}>
+          {/* Usa el estado showMenu para cambiar entre el icono de hamburguesa y la X */}
+          {showMenu ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-8 h-8 text-azul-ap"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-8 h-8 text-azul-ap"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          )}
         </button>
-        <div className="hidden md:flex font-bold text-lg items-center justify-around ">
-          <ul className="flex space-x-6 justify-between items-center w-auto ">
+
+        {/* Agrega la clase hidden si showMenu es false para ocultar el menú en dispositivos móviles */}
+        <div
+          className={`md:flex  font-bold text-lg items-center justify-around ${
+            showMenu ? "" : "hidden"
+          }`}
+        >
+          <ul
+            className={`flex flex-col md:flex-row md:space-x-12  justify-around md:justify-between space-y-12 md:space-y-0  w-auto ${
+              showMenu || !showMenu ? "" : "hidden"
+            }`}
+          >
             <li>
               <a
                 href="#"
@@ -90,9 +125,8 @@ function Base() {
       </nav>
 
       {showLoginForm && (
-        <div className="fixed top-0 z-10 right-0 bottom-0 left-0 flex items-center justify-center bg-black bg-opacity-50">
-          <LoginForm />
-          {/* Your login form component goes here */}
+        <div className="fixed top-0 z-10 right-0 bottom-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+          <LoginForm onClose={handleCloseLoginForm} />
         </div>
       )}
     </header>

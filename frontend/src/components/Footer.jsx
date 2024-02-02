@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/rFooter.svg";
 
-import "./Footer.css";
+import "./CSS/Footer.css";
 function Footer() {
   return (
     <footer class="text-white bg-azul-ap">

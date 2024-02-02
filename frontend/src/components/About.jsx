@@ -1,6 +1,6 @@
 import React from "react";
 import roundedLogo from "../assets/rLogo.svg";
-import "./About.css";
+import "./CSS/About.css";
 function About() {
   return (
     <section

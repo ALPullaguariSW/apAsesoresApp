@@ -9,8 +9,8 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Base />
-    <About />
     <FirstSection />
+    <About />
     <Footer />
   </React.StrictMode>
 );
