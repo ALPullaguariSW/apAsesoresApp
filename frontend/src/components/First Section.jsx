@@ -5,7 +5,6 @@ import "./CSS/First Section.css";
 function FirstSection() {
   return (
     <section class="">
-      
       <div class=" text-azul-ap relative flex items-center ">
         <div class="absolute justify-center w-full pr-8 md:w-5/6  flex flex-col space-y-3 md:justify-end items-end ">
           <p class=" font-bold md:text-3xl text-xl text-end">
@@ -36,7 +35,7 @@ function FirstSection() {
               <input
                 type="email"
                 id="first_name"
-                class="w-full border pl-10  border-gray-300 text-sol-ap text-md rounded-lg focus:ring-azul-ap focus:border-azul-ap block p-2.5 placeholder-azul-ap placeholder:opacity-70"
+                class="w-full border pl-10  border-gray-300 text-azul-ap text-md rounded-lg focus:ring-azul-ap focus:border-azul-ap block p-2.5 placeholder-azul-ap placeholder:opacity-70"
                 placeholder=" Escribe tu email aquí"
                 autoComplete="off"
                 required

@@ -103,7 +103,7 @@ function Base() {
           </ul>
         </div>
         <button
-          className="bg-azul-ap hidden md:flex p-4 h-12 rounded text-white items-center hover:bg-sol-ap"
+          className="bg-azul-ap  flex p-4 h-12 rounded text-white items-center hover:bg-sol-ap "
           onClick={handleLoginClick}
         >
           <svg
