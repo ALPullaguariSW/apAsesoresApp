@@ -22,7 +22,7 @@ function Base() {
     <header className="p-6 text-md shadow-md">
       <nav className="flex justify-around items-center ">
         <a href="" className="">
-          <img src={logo} class="w-20" alt="" />
+          <img src={logo} className="w-20" alt="" />
         </a>
 
         <button className="md:hidden" onClick={handleMenuClick}>
@@ -74,7 +74,7 @@ function Base() {
             <li>
               <a
                 href="#"
-                class="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap "
+                className="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap "
               >
                 Inicio
               </a>
@@ -82,7 +82,7 @@ function Base() {
             <li>
               <a
                 href="#about"
-                class="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap "
+                className="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap "
               >
                 Sobre nosotros
               </a>
@@ -90,13 +90,13 @@ function Base() {
             <li>
               <a
                 href="#sn"
-                class="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap "
+                className="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap "
               >
                 Servicios
               </a>
             </li>
             <li>
-              <a class="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap ">
+              <a className="text-azul-ap rounded hover:drop-shadow-xl hover:text-sol-ap ">
                 Contactos
               </a>
             </li>

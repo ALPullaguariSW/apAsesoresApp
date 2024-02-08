@@ -1,5 +1,3 @@
-
-import axios from "axios";
 function LoginForm(props) {
   const handleClose = () => {
     // Llama a la función onClose pasada como prop
@@ -7,10 +5,9 @@ function LoginForm(props) {
       props.onClose();
     }
   };
-  
+
   return (
     <form method="post" className="bg-white p-24 rounded shadow-2xl">
-      
       <button
         id="close"
         className="bg-white w-full flex justify-end"
@@ -105,5 +102,4 @@ function LoginForm(props) {
     </form>
   );
 }
-
 export default LoginForm;
