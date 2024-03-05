@@ -96,6 +96,24 @@ python manage.py runserver
 
 - AXEL PULLAGUARI 😶‍🌫️
 
+### Contribuciones
+
+¡Estamos abiertos a contribuciones! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Realiza un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y commitéalos (`git commit -am 'Añade una nueva funcionalidad'`).
+4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
+5. Abre una solicitud de extracción en GitHub.
+
+### Contacto
+
+¿Tienes preguntas, sugerencias o simplemente quieres charlar sobre el proyecto? Puedes contactarme a través de:
+
+- Correo electrónico: [axel_2008ec@hotmail.com](mailto:axel_2008ec@hotmail.com)
+
+¡Estoy emocionado de escuchar tus ideas!
+
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT.
