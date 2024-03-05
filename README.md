@@ -11,31 +11,31 @@ La aplicación web proporciona funcionalidades para cotizar seguros, administrar
 
 ## Instrucciones de Ejecución
 
-1. Clona este repositorio en tu máquina local:
+1. 🚀 Clona este repositorio en tu máquina local:
 
 ```bash
    git clone <>
 ```
 
-2. Accede al directorio del proyecto:
+2. 📁 Accede al directorio del proyecto:
 
 ```bash
 cd frontend
 ```
 
-3. Instala las dependencias necesarias utilizando npm:
+3. 💻 Instala las dependencias necesarias utilizando npm:
 
 ```bash
 npm install
 ```
 
-4. Inicia la aplicación en modo de desarrollo:
+4. ▶️ Inicia la aplicación en modo de desarrollo:
 
 ```bash
 npm run dev
 ```
 
-5. Abre tu navegador web y accede a [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento.
+5. 🌐 Abre tu navegador web y accede a http://localhost:3000 para ver la aplicación en funcionamiento.
 
 ## Dependencias
 
@@ -60,19 +60,19 @@ Asegúrate de tener instalado lo siguiente antes de ejecutar el proyecto:
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local:
+1. 📂 Clona este repositorio en tu máquina local:
 
    ```bash
    git clone
    ```
 
-2. Navega al directorio del proyecto:
+2. 🚀 Navega al directorio del proyecto:
 
    ```bash
-   cd tu_repositorio
+   cd backend
    ```
 
-3. Instala las dependencias usando pip:
+3. 💻 Instala las dependencias usando pip:
 
    ```bash
    pip install -r requirements.txt
@@ -80,9 +80,9 @@ Asegúrate de tener instalado lo siguiente antes de ejecutar el proyecto:
 
 ## Configuración
 
-1. Crea y configura un entorno virtual (opcional pero recomendado).
+1. ⚙️ Crea y configura un entorno virtual (opcional pero recomendado).
 
-2. Copia el archivo `.env.example` y renómbralo a `.env`. Ajusta las variables de entorno según sea necesario.
+2. 🔄 Copia el archivo .env.example y renómbralo a .env. Ajusta las variables de entorno según sea necesario.
 
 ## Ejecución
 
@@ -100,17 +100,17 @@ python manage.py runserver
 
 ¡Estamos abiertos a contribuciones! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-1. Realiza un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y commitéalos (`git commit -am 'Añade una nueva funcionalidad'`).
-4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre una solicitud de extracción en GitHub.
+1. 🌟 Realiza un fork del repositorio.
+2. 🌿 Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+3. ✍️ Realiza tus cambios y commitealos (git commit -am 'Añade una nueva funcionalidad').
+4. 📤 Sube tus cambios (git push origin feature/nueva-funcionalidad).
+5. 🚀 Abre una solicitud de extracción en GitHub.
 
 ### Contacto
 
 ¿Tienes preguntas, sugerencias o simplemente quieres charlar sobre el proyecto? Puedes contactarme a través de:
 
-- Correo electrónico: [axel_2008ec@hotmail.com](mailto:axel_2008ec@hotmail.com)
+- 📧 Correo electrónico: [axel_2008ec@hotmail.com](mailto:axel_2008ec@hotmail.com)
 
 ¡Estoy emocionado de escuchar tus ideas!
 
