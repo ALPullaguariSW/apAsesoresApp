@@ -1,17 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import About from "./components/About.jsx";
-import Base from "./components/Base.jsx";
-import Footer from "./components/Footer.jsx";
-import FirstSection from "./components/First Section.jsx";
+import Main from "./components/Pages/MainPage/Main.jsx";
+import Error from "./components/Pages/Error404Page/404.jsx";
+import Dashboard from "./components/Pages/DashboardPage/dashboard.jsx";
+import Cotizador from "./components/Pages/FormPage/cotizador.jsx";
 import "./index.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Base />
-    <FirstSection />
-    <About />
-    <Footer />
-    
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/cotizador" element={<Cotizador />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );

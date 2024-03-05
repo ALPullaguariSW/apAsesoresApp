@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import Main from "./components/Pages/MainPage/Mian.jsx";
+import "./index.css";
 
-import Django from "./components/Django.jsx";
-
-
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("404")).render(
   <React.StrictMode>
-    <Django/>
+    <Main />
   </React.StrictMode>
 );
