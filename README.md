@@ -1,6 +1,7 @@
 # A&P Asesores App
 
 Esta es una aplicación web para A&P Asesores.
+![Alt Text](./rLogo.svg)
 
 ## Descripción
 
