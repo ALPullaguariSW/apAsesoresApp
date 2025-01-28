@@ -1,0 +1,81 @@
+# Diagrama de flujo de la aplicación Terrastruck
+Cámaras_IP: {
+  shape: circle
+  label: "Cámaras IP"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+Servidor_Python: {
+  label: "Servidor (Python)"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+OpenCV: {
+  label: "OpenCV"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+YOLOv8: {
+  label: "YOLOv8"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+Análisis: {
+  label: "Análisis"
+  shape: diamond
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+WebSockets: {
+  label: "WebSockets"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+Firebase_DB: {
+  label: "Firebase DB"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+Notificaciones: {
+  label: "Firebase Notificaciones"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+App_Movil: {
+  label: "App Movil"
+  style: {
+    fill: "#f0f8ff" # aliceblue
+  }
+}
+
+Inicio -> Cámaras_IP
+Cámaras_IP -> Servidor_Python: "Captura de Video"
+Servidor_Python -> OpenCV: "Extracción de Frames"
+OpenCV -> YOLOv8: "Detección"
+YOLOv8 -> Análisis: "Análisis de Resultados"
+
+Análisis -> WebSockets: "Si es riesgo"
+Análisis -> Cámaras_IP: "No es riesgo"
+
+WebSockets -> Firebase_DB: "Guardar datos"
+WebSockets -> Notificaciones: "Notificacion Push"
+
+Notificaciones -> App_Movil: "Mostrar alerta"
+Firebase_DB -> Cámaras_IP
+App_Movil -> Cámaras_IP
