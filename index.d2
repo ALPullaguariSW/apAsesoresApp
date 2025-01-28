@@ -1,0 +1,82 @@
+# Configuración general del diagrama
+direction: right
+
+# Componentes
+camaras_ip: "Cámaras IP\n(Transmisión en Vivo)" {
+  Camera: "" {
+    icon: https://icons.terrastruct.com/essentials/012-video%20camera.svg
+    shape: image
+  }
+  label.near: outside-top-center
+  style.3d: true
+  top: 264
+  left: 0
+  style.shadow: true
+}
+servidor_python: "Servidor Python\n(OpenCV)" {
+  python: "" {
+    icon: https://icons.terrastruct.com/dev/python.svg
+    shape: image
+    top: 0
+    left: 0
+    width: 177
+    height: 177
+  }
+  style.3d: true
+  top: 239
+  left: 452
+  style.shadow: true
+}
+servidor_python_procesado: "Servidor Python\n(YOLOv8 - Video Procesado)" {
+  YoloV8: "" {
+    icon: https://s3-us-west-1.amazonaws.com/terrastruct.uploaded-images/1906541754/xmdcqsfowgqsawihtlanubzicxnscw.webp
+    shape: image
+    top: 0
+    left: 0
+    width: 243
+    height: 195
+  }
+  style.3d: true
+  top: 230
+  left: 1060
+  style.shadow: true
+  label.near: outside-right-center
+}
+websockets: "WebSockets" {
+  web: "" {
+    icon: https://icons.terrastruct.com/gcp/Products%20and%20services/API%20Management/Cloud%20Endpoints.svg
+    shape: image
+  }
+  style.3d: true
+  top: 0
+  left: 1655
+  style.shadow: true
+}
+firebase: "Firebase\n(Notificaciones y BBDD)" {
+  firebase: "" {
+    icon: https://s3-us-west-1.amazonaws.com/terrastruct.uploaded-images/1906541754/gmrcpirfeirjhcogtkrvahfilhosbr.png
+    shape: image
+  }
+  style.3d: true
+  top: 264
+  left: 2062
+  style.shadow: true
+}
+app_movil: "Aplicación Móvil\n(iOS y Android)" {
+  Movil: "" {
+    icon: https://icons.terrastruct.com/tech/052-smartphone-3.svg
+    shape: image
+  }
+  style.3d: true
+  top: 610
+  left: 1655
+  style.shadow: true
+}
+
+# Conexiones
+camaras_ip -> servidor_python: "Video en Vivo" {style.shadow: true}
+servidor_python -> servidor_python_procesado: "Video Procesado\n(Redimensionado, Mejora Calidad)" {style.shadow: true}
+servidor_python_procesado -> websockets: "Detección de Caídas" {style.shadow: true}
+servidor_python_procesado -> app_movil: "Transmisión en Vivo (Video Procesado)" {style.shadow: true}
+websockets -> firebase: "Notificaciones de Caídas" {style.shadow: true}
+firebase -> app_movil: "Notificaciones Push" {style.shadow: true}
